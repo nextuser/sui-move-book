@@ -35,7 +35,7 @@ module book::ability{
         o : NoDrop,
     }
 
-    fun containNoDrop(o : NoDrop ) : Container{
+    public fun containNoDrop(o : NoDrop ) : Container{
         std::debug::print(&o);
         Container{
             o : o,
